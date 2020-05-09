@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&family=Sedgwick+Ave&display=swap');
+
+/*=========================================
+
+	Color Variables
+
+==========================================*/
+
+html {
+	--color-crimson-dark: #aa2622;
+	--color-crimson: #b80f0a;
+	--color-crimson-light: #d65a56;
+	--color-crimson-super-light: #fac8c7;
+	--color-blue-dark: #0f86a9;
+	--color-blue: #02a4d3;
+	--color-blue-light: #2bc3ef;
+	--color-blue-super-light: #cbeef8;
+	--color-gray-dark: #908f8f;
+	--color-gray: #b4b4b4;
+	--color-gray-light: #cecccc;
+	--color-gray-super-light: #e3e1e1;
+	--color-black-red: #3b3232;
+	--color-gray-blue: #6a6c6c;
+	--color-text-primary: #383737;
+	--color-text-secondary: #242d2f;
+	--color-hero-text: #154a59;
+
+}
+
+/*=========================================
+
+	Typography Variables
+
+==========================================*/
+
+html {
+	--font-primary: 'Baloo 2' Arial, sans-serif;
+	--font-secondary: 'Sedgwick Ave', 'Times New Roman', serif;
+	--ratio: 1.333;
+	--size-xxsmall: calc( 0.5rem * var(--ratio) );
+	--size-xsmall: calc( 0.6rem * var(--ratio) );
+	--size-small: calc( 0.8rem * var(--ratio) );
+	--size-medium: calc( 1rem * var(--ratio) );
+	--size-medium-2: calc( 1.2rem * var(--ratio) );
+	--size-large: calc( var(--size-medium-2) * var(--ratio) );
+	--size-xlarge: calc( var(--size-large) * var(--ratio) );
+	--size-xxlarge: calc( var(--size-xlarge) * var(--ratio) );
+}
+
+/*=========================================
+
+	Typography
+
+==========================================*/
+
+html {
+	color: var(--color-text-primary);
+	font-family: : var(--font-primary);
+}
+
+h1 {
+	color: var(--color-crimson-dark);
+	font-size: var(--size-xxlarge);
+}
+
+h2 {
+	color: var(--color-blue-dark);
+	font-size: var(--size-xlarge);
+}
+
+h3 {
+	color: var(--color-crimson);
+	font-size: var(--size-large);
+}
+
+h4 {
+	color: var(--color-blue);
+	font-size: var(--size-medium);
+}
+
+h5{
+	color: var(--color-crimson-light);
+	font-size: var(--size-small);
+}
+
+h6 {
+	color: var(--color-blue-light);
+	font-size: var(--size-xsmall);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--font-secondary);
+	line-height: 1.1;
+	margin: 1.5rem;
+}
+
+p {
+	font-size: var(--size-medium);
+	max-width: 33rem;
+}
+
+/*=========================================
+
+	Header
+
+==========================================*/
+
+header {
+	background-color: var(--color-blue-dark);
+	border-bottom: 3px solid var(--color-crimson-dark);
+	padding: 1rem 1.5rem;
+}
+
+header a {
+	color: var(--color-crimson-light);
+	text-decoration: none;
+}
+
+header ul {
+	padding: 0;
+}
+
+header li {
+	list-style-type: none;
+	border-bottom: 1px solid var(--color-gray);
+	margin-bottom: 1rem;
+}
+
+.logo {
+	width: 4rem;
+}
+
+/*=========================================
+
+	Navagation
+
+==========================================*/
+
+.nav-primary {
+	font-size: var(--size-medium);
+	margin-top: 1rem;
+}
+
+.nav-primary a:visited {
+	color: var(--color-black-red);
+}
+
+.nav-primary a:hover {
+	color: var(--color-crimson-super-light);
+}
+
+.nav-primary a:focus {
+	background-color: var(--color-gray-super-light);
+	color: var(--color-blue-dark);
+}
+
+.nav-primary a:active {
+	color: var(--color-crimson-dark);
+}
+
+.nav-secondary {
+	border-top: 2px solid var(--color-crimson-light);
+	font-size: var(--size-xsmall);
+	padding-top: 1.5rem;
+}
+
+.nav-secondary li{
+	list-style-type: none;
+}
+
+		/*=================================
+			Media Querie Nav-Primary
+
+		=================================*/
+
+@media ( min-width: 920px ) {
+	header {
+		border-bottom: 8px solid var(--color-crimson-dark);
+		margin: auto;
+		max-width: 100%;
+	}
+
+	.nav-primary ul {
+		align-items: center;
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	.nav-primary li {
+		border-bottom: none;
+		display: inline-block;
+	}
+
+	.logo {
+		width: 6rem;
+	}
+}
+
+
+/*=========================================
+
+	Body
+
+==========================================*/
+
+body {
+	background-color: var(--color-blue-super-light);
+	margin: auto;
+}
+
+a {
+	color: var(--color-blue-dark);
+	text-decoration: none;
+}
+
+a:visited {
+	color: var(--color-crimson-light);
+}
+
+a:hover {
+	color: var(--color-crimson);
+}
+
+a:focus {
+	background-color: var(--color-crimson-super-light);
+	color: var(--color-black-red);
+}
+
+a:active {
+	color: var(--color-black-red);
+}
+
+
+/*=========================================
+
+	Main
+
+==========================================*/
+
+main {
+	margin: 1rem;
+	text-align: center;
+}
+
+p {
+	margin: 1.5rem auto;
+	text-align: left;
+	text-indent: 1.5rem;
+}
+
+img {
+	max-width: 100%;
+}
+
+.img-portrait {
+	background-color: var(--color-blue-dark);
+	border-radius: 1rem;
+	box-shadow: 0.3rem 0.3rem 0.1rem rgba( 0, 0, 0, 0.3);
+	margin: 2rem;
+}
+
+.img-portrait img {
+	border-radius: 15rem;
+	max-width: 60%;
+	padding: 2rem;
+}
+
+.img-quote p {
+	color: var(--color-blue-super-light);
+	font-size: var(--size-large);
+}
+
+.img-quote {
+	font-family: var(--font-secondary);
+	padding-bottom: 1rem;
+}
+
+.img-quote cite {
+	color: var(--color-crimson-super-light);
+	font-size: var(--size-medium);
+}
+
+/*=========================================
+
+	Hero Block
+
+==========================================*/
+
+.hero-block {
+	background-image: url(images/idea-postit.jpg);
+	background-position: center left;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 100vh;
+}
+
+.hero-text {
+	color: var(--color-hero-text);
+	font-family: var(--font-secondary);
+	font-size: var(--size-xxlarge);
+	max-width: 100%;
+}
+
+.button-hero, .button-hero:visited {
+	color: var(--color-gray);
+	background-color: var(--color-crimson);
+	border-radius: 2rem 0 2rem 0;
+	box-shadow: 0.3rem 0.3rem 0.1rem rgba( 0, 0, 0, 0.3);
+	display: inline-block;
+	font-size: var(--size-large);
+	margin: 2rem;
+	max-width: 10rem;
+	padding: 2.5rem;
+}
+
+.button-hero:hover, .button-hero:focus {
+	background-color: var(--color-blue);
+	border-radius: 0 2rem 0 2rem;
+	box-shadow: 0.3rem 0.3rem 0.1rem rgba( 0, 0, 0, 0.3);
+	color: var(--color-blue-super-light);
+}
+
+.button-hero:active {
+	background-color: var(--color-blue-super-light);
+	color: var(--color-black-red);
+	text-decoration: none;
+}
+
+/*=========================================
+
+	Resume
+
+==========================================*/
+
+.img-resume {
+	border-radius: 1rem;
+	box-shadow: 0.3rem 0.3rem 0.1rem rgba( 0, 0, 0, 0.3);
+}
+
+
+.education, .experience, .skills {
+	background-color: var(--color-crimson-super-light);
+	border-radius: 5rem;
+	box-shadow: 0.3rem 0.3rem 0.1rem rgba( 0, 0, 0, 0.3);
+	margin: 3rem auto;
+	max-width: 40rem;
+	padding: 2rem;
+	text-align: left;
+}
+
+.education summary, .experience summary, .skills summary {
+	color: var(--color-crimson);
+	font-family: var(--font-secondary);
+	font-size: var(--size-large);
+}
+
+section p {
+	margin: 1rem;
+}
+
+.education, .experience, .skills h3, h4 {
+	font-size: var(--size-medium-2);
+}
+
+ul li {
+	font-size: var(--size-medium);
+}
+
+li {
+	margin: 1rem;
+}
+
+details {
+	margin: 2rem;
+}
+
+details p {
+	font-size: var(--size-medium-2);
+}
