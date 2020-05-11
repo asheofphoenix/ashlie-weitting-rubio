@@ -107,23 +107,25 @@ p {
 
 header {
 	background-color: var(--color-blue-dark);
-	border-bottom: 3px solid var(--color-crimson-dark);
-	padding: 1rem 1.5rem;
+	border-bottom: 8px solid var(--color-crimson-light);
+	
 }
 
 header a {
-	color: var(--color-crimson-light);
+	color: var(--color-gray-light);
 	text-decoration: none;
 }
 
 header ul {
+	margin-bottom: 3rem;
 	padding: 0;
 }
 
 header li {
 	list-style-type: none;
-	border-bottom: 1px solid var(--color-gray);
+	border-bottom: 1px solid var(--color-crimson-light);
 	margin-bottom: 1rem;
+	padding: .5rem;
 }
 
 .logo {
@@ -146,7 +148,7 @@ header li {
 }
 
 .nav-primary a:hover {
-	color: var(--color-crimson-super-light);
+	color: var(--color-blue-light);
 }
 
 .nav-primary a:focus {
@@ -233,16 +235,16 @@ a:active {
 
 /*=========================================
 
-	Main
+	Home Page
 
 ==========================================*/
 
-main {
+.home-page {
 	margin: 1rem;
 	text-align: center;
 }
 
-p {
+.home-page p {
 	margin: 1.5rem auto;
 	text-align: left;
 	text-indent: 1.5rem;
@@ -278,6 +280,41 @@ img {
 .img-quote cite {
 	color: var(--color-crimson-super-light);
 	font-size: var(--size-medium);
+}
+
+	/*====================================
+		Media Quiere
+	=====================================*/
+
+@media ( min-width: 670px ) {
+	.img-portrait {
+		margin: auto;
+		max-width: 70%;
+	}
+}
+
+@media ( min-width: 850px) {
+	.img-portrait {
+		max-width: 50%;
+	}
+}
+
+@media ( min-width: 1050px ) {
+	.img-portrait {
+		max-width: 50%;
+	}
+}
+
+@media (min-width: 1300px ) {
+	.img-portrait {
+		max-width: 40%;
+	}
+
+@media ( min-width: 1600px ) {
+	.img-portrait {
+		max-width: 30%;
+	}
+}
 }
 
 /*=========================================
@@ -338,6 +375,8 @@ img {
 .img-resume {
 	border-radius: 1rem;
 	box-shadow: 0.3rem 0.3rem 0.1rem rgba( 0, 0, 0, 0.3);
+	display: block;
+	margin: auto;
 }
 
 
@@ -379,4 +418,94 @@ details {
 
 details p {
 	font-size: var(--size-medium-2);
+}
+
+/*=========================================
+
+	Portfolio
+
+==========================================*/
+
+.project-card img{
+	border-radius: 1rem;
+	max-width: 100%
+}
+
+.project-card {
+	border-radius: 2rem;
+	background-color: var(--color-crimson-super-light);
+	padding: 2rem;
+	
+}
+
+.project-card-container {
+	display: grid;
+	grid-gap: 2rem;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+}
+
+	/*=====================================
+
+		Media Queries
+	======================================*/
+
+@media ( min-width: 800px ) {
+	.project-card-container {
+		align-items: center;
+		grid-gap: 1.5rem;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+}
+
+@media ( min-width: 1000px ) {
+	.project-card-container {
+		align-items: start;
+		grid-template-columns: 2fr 2fr 2fr;
+		grid-template-rows: 1fr 1fr 1fr;
+	}
+
+	@media ( min-width: 1600px ) {
+		.project-card-container {
+			grid-template-columns: 2fr 2fr 2fr 2fr;
+			grid-template-rows: 1fr 1fr 1fr;
+		}
+	}
+}
+
+/*=========================================
+
+	Portfolio Project Foresight
+
+==========================================*/
+
+.foresight-container p{
+	margin: 0 auto;
+}
+
+.foresight-img-right img, .foresight-img-left img {
+	border-radius: 3rem;
+	display: block;
+	max-width: 60%;
+}
+
+.foresight-img-right img {
+	float: right;
+	margin: 1rem 0.5rem 1rem 1rem;
+	padding: 1rem;
+}
+
+.foresight-img-left img {
+	float: left;
+	margin: 1rem 1rem 1rem .5rem;
+	padding: 1rem;
+}
+
+.foresight-container h3 {
+	clear: both;
+}
+
+footer {
+	clear: both;
 }
