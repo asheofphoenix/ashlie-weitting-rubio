@@ -158,13 +158,22 @@ header li {
 	color: var(--color-crimson-dark);
 }
 
-.nav-secondary {
+footer {
 	border-top: 2px solid var(--color-crimson-light);
+	margin-top: 2rem;
+}
+
+footer p {
 	font-size: var(--size-xsmall);
-	padding-top: 1.5rem;
+	padding-left: 1rem;
+}
+
+.nav-secondary ul {
+	padding-left: 0;
 }
 
 .nav-secondary li{
+	font-size: var(--size-xsmall);
 	list-style-type: none;
 }
 
@@ -224,7 +233,7 @@ a:visited {
 }
 
 a:hover {
-	color: var(--color-crimson);
+	color: var(--color-black-red);
 }
 
 a:focus {
@@ -466,8 +475,12 @@ details p {
 .project-card {
 	background-color: var(--color-crimson-super-light);
 	border-radius: 2rem;
-	box-shadow: 0.3rem 0.3rem 0.1rem rgba( 0, 0, 0, 0.3);
+	box-shadow: 0.3rem 0.3rem 0.1rem rgba( 0, 0, 0, 0.3); 
 	padding: 2rem;
+}
+
+.project-card p {
+	font-size: var(--size-large);
 }
 
 .project-card:hover {
