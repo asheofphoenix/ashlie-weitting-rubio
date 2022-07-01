@@ -19,7 +19,7 @@ html {
 	--color-gray: #b4b4b4;
 	--color-gray-light: #cecccc;
 	--color-gray-super-light: #e3e1e1;
-	--color-black-red: #3b3232;
+	--color-black-red: #9c2525;
 	--color-gray-blue: #6a6c6c;
 	--color-text-primary: #383737;
 	--color-text-secondary: #242d2f;
@@ -142,7 +142,7 @@ header li {
 }
 
 .nav-primary a:visited {
-	color: var(--color-black-red);
+	color: var(--color-crimson-super-light);
 }
 
 .nav-primary a:hover {
@@ -252,13 +252,14 @@ a:active {
 
 ==========================================*/
 
-.home-page {
+.justify-page {
 	margin: 1rem;
 	text-align: center;
 }
 
-.home-page p {
-	margin: 1.5rem auto;
+.justify-page p {
+	font-size: var(--size-medium-2);
+	margin: 2rem auto;
 	text-align: left;
 	text-indent: 1.5rem;
 }
@@ -494,7 +495,7 @@ details p {
 	grid-template-columns: 1fr;
 	grid-template-rows: 1fr;
 	justify-items: center;
-	margin: auto 1rem;
+	margin: auto;
 }
 
 	/*=====================================
@@ -536,12 +537,6 @@ details p {
 	color: var(--color-blue-dark);
 	font-family: var(--font-secondary);
 	font-size: var(--size-large);
-}
-
-.indepth-project-page p{
-	font-size: var(--size-medium-2);
-	margin: auto 1rem;
-	margin-bottom: 2rem;
 }
 
 .indepth-project-card img {
